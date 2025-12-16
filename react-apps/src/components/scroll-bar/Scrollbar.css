@@ -1,0 +1,23 @@
+.scollbar-container{
+    width: 100%;
+}
+.top-container{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    width: 100%;
+    background-color: dodgerblue;
+    margin: 0;
+    padding: 10px;
+}
+.top-container p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.currentBar{
+    height: 10px;
+    background-color: rgb(23, 255, 58);
+    width: 0%;
+}

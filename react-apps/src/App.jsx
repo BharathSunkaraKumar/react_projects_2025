@@ -5,6 +5,7 @@ import LoadMore from "./components/load_more/LoadMore";
 import Qrcode from "./components/Qr-code/Qrcode";
 import RandomColor from "./components/random_color/RandomColor";
 import Rating from "./components/Rating_stars/Rating";
+import ScrollBar from "./components/scroll-bar/ScrollBar";
 import menus from "./tree-view/data";
 import MainMenu from "./tree-view/MainMenu";
 
@@ -18,7 +19,8 @@ function App() {
       {/* <LoadMore /> */}
       {/* <MainMenu list={menus} /> */}
       {/* <Qrcode /> */}
-      <Theme />
+      {/* <Theme /> */}
+      <ScrollBar url={"https://dummyjson.com/products?limit=100"} />
     </>
   );
 }
