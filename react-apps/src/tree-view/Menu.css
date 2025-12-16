@@ -1,0 +1,11 @@
+.mainmenu-conatiner{
+    background-color: rgb(12, 79, 147);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    color: white;
+}
+.menulist-container {
+    list-style: none;
+}
