@@ -16,6 +16,7 @@ const RandomColor = () => {
     setColor(`${hexColor}`);
   };
   console.log(color);
+
   const handleRgbGenColor = () => {
     console.log("rgb");
     let R = handleRandom(256);

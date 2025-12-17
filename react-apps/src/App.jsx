@@ -12,7 +12,7 @@ import MainMenu from "./tree-view/MainMenu";
 function App() {
   return (
     <>
-      {/* <Accordion/> */}
+      <Accordion />
       {/* <RandomColor/> */}
       {/* <Rating /> */}
       {/* <Slider url={"https://picsum.photos/v2"} limit={10} /> */}
@@ -20,7 +20,7 @@ function App() {
       {/* <MainMenu list={menus} /> */}
       {/* <Qrcode /> */}
       {/* <Theme /> */}
-      <ScrollBar url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollBar url={"https://dummyjson.com/products?limit=100"} /> */}
     </>
   );
 }
