@@ -1,0 +1,36 @@
+.model{
+    background-color: dodgerblue;
+    border: 5px solid mediumseagreen;
+    padding: 1px;
+    margin: 5px;
+}
+.body{
+    border: 5px solid;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.header{
+    border: 5px solid;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    border: 5px solid;
+    padding: 10px;
+}
+.btn{
+    border-radius: 50%;
+    border: none;
+    padding: 6px 13.5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: tomato;
+}
+.btn:hover{
+    background-color: rgb(238, 53, 53);
+}

@@ -7,6 +7,7 @@ import RandomColor from "./components/random_color/RandomColor";
 import Rating from "./components/Rating_stars/Rating";
 import ScrollBar from "./components/scroll-bar/ScrollBar";
 import Tab from "./components/tabs/Tab";
+import ModelTest from "./model/ModelTest";
 import menus from "./tree-view/data";
 import MainMenu from "./tree-view/MainMenu";
 
@@ -22,7 +23,8 @@ function App() {
       {/* <Qrcode /> */}
       {/* <Theme /> */}
       {/* <ScrollBar url={"https://dummyjson.com/products?limit=100"} /> */}
-      <Tab />
+      {/* <Tab /> */}
+      <ModelTest />
     </>
   );
 }
