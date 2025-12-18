@@ -1,0 +1,38 @@
+.tab-contaienr{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+.tab-header{
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+.tab-box{
+    border: 1px solid black;
+    padding: 6px;
+    background-color: dodgerblue;
+    width: 100%;
+    color: white;
+}
+.tab-content{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.tab-box-active{
+    background-color: mediumseagreen;
+    /* border: 1px solid black;
+    padding: 6px;
+    background-color: dodgerblue;
+    width: 100%;
+    color: white; */
+}

@@ -6,13 +6,14 @@ import Qrcode from "./components/Qr-code/Qrcode";
 import RandomColor from "./components/random_color/RandomColor";
 import Rating from "./components/Rating_stars/Rating";
 import ScrollBar from "./components/scroll-bar/ScrollBar";
+import Tab from "./components/tabs/Tab";
 import menus from "./tree-view/data";
 import MainMenu from "./tree-view/MainMenu";
 
 function App() {
   return (
     <>
-      <Accordion />
+      {/* <Accordion /> */}
       {/* <RandomColor/> */}
       {/* <Rating /> */}
       {/* <Slider url={"https://picsum.photos/v2"} limit={10} /> */}
@@ -21,6 +22,7 @@ function App() {
       {/* <Qrcode /> */}
       {/* <Theme /> */}
       {/* <ScrollBar url={"https://dummyjson.com/products?limit=100"} /> */}
+      <Tab />
     </>
   );
 }
