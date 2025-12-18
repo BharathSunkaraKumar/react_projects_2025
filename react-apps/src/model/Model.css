@@ -24,6 +24,7 @@
     padding: 10px;
 }
 .btn{
+    
     border-radius: 50%;
     border: none;
     padding: 6px 13.5px;
@@ -33,4 +34,21 @@
 }
 .btn:hover{
     background-color: rgb(238, 53, 53);
+}
+.mode-container{
+    height: 100vh;
+    background-color: black;
+}
+.show-btn-model{
+    display: flex;
+    justify-content: center;
+}
+.show-btn-model button{
+    margin: 10px;
+    padding: 10px 30px;
+    font-weight: 500;
+    background-color: rgb(156, 189, 221);
+    border: none;
+    color: rgb(1, 1, 4);
+    border-radius: 10px;
 }

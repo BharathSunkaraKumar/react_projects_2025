@@ -2,7 +2,7 @@ import React from "react";
 
 const Model = ({ header, body, footer, close }) => {
   return (
-    <div>
+    <div className="mode-container">
       <div className="model">
         <div className="header">
           <button className="btn" onClick={close}>

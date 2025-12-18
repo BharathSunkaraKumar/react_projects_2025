@@ -11,8 +11,12 @@ const ModelTest = () => {
     setShowModel(false);
   };
   return (
-    <div>
-      <button onClick={handleShow}>Show Model</button>
+    <div className="mode-container">
+      <div className="show-btn-model">
+        <button onClick={handleShow}>
+          {showModel ? "Hide Model" : "Show Model"}
+        </button>
+      </div>
       <div>
         {showModel && (
           <Model
