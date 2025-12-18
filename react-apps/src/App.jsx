@@ -1,4 +1,5 @@
 import Accordion from "./components/accordion/Accordion";
+import GitProfile from "./components/gitProfile/GitProfile";
 import Slider from "./components/image-slider/Slider";
 import Theme from "./components/light-dark/Theme";
 import LoadMore from "./components/load_more/LoadMore";
@@ -24,7 +25,8 @@ function App() {
       {/* <Theme /> */}
       {/* <ScrollBar url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <Tab /> */}
-      <ModelTest />
+      {/* <ModelTest /> */}
+      <GitProfile />
     </>
   );
 }
