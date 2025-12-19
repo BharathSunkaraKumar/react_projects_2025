@@ -1,0 +1,18 @@
+.ttt-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.square{
+    border: 1px solid dodgerblue;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: -1px;
+    margin-right: -1px;
+    padding: 0px;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+}

@@ -9,6 +9,7 @@ import Rating from "./components/Rating_stars/Rating";
 import ScrollBar from "./components/scroll-bar/ScrollBar";
 import SearchAC from "./components/searchAutoComplete/SearchAC";
 import Tab from "./components/tabs/Tab";
+import TicTacToe from "./components/tictactoe/TicTacToe";
 import ModelTest from "./model/ModelTest";
 import menus from "./tree-view/data";
 import MainMenu from "./tree-view/MainMenu";
@@ -28,7 +29,8 @@ function App() {
       {/* <Tab /> */}
       {/* <ModelTest /> */}
       {/* <GitProfile /> */}
-      <SearchAC />
+      {/* <SearchAC /> */}
+      <TicTacToe />
     </>
   );
 }
