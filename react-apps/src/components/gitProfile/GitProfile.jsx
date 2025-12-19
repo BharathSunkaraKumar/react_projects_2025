@@ -4,28 +4,42 @@ import Profile from "./Profile";
 const GitProfile = () => {
   const [name, setName] = useState("BharathSunkaraKumar");
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const fetchProfile = async () => {
     try {
+      setLoading(true);
       const resp = await fetch(`https://api.github.com/users/${name}`);
       const data = await resp.json();
 
-      console.log(data);
       if (data) {
         setUser(data);
+        setLoading(false);
+        setName("");
+        console.log(user);
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.message);
+      setLoading(false);
+    }
   };
   useEffect(() => {
     fetchProfile();
   }, []);
-  const handleSearch = () => {};
+  const handleSearch = () => {
+    fetchProfile();
+  };
+  if (loading) {
+    return <p>Loading...</p>;
+  }
   return (
     <div className="git-wrapper">
+      <div className="title-github">
+        GitHub <span>Profile😃</span>
+      </div>
       <div className="git-container">
-        <h1>GitHub Profile</h1>
         <div className="git-search">
-          <div>
+          <div className="git-input">
             <input
               value={name}
               onChange={(e) => {
@@ -40,7 +54,9 @@ const GitProfile = () => {
             <button onClick={handleSearch}>Search</button>
           </div>
         </div>
-        <div className="profile">
+      </div>
+      <div className="profile">
+        {user != null ? (
           <Profile
             avatar_url={user?.avatar_url}
             created_at={user?.created_at}
@@ -52,7 +68,7 @@ const GitProfile = () => {
             public_repos={user?.public_repos}
             blog={user?.blog}
           />
-        </div>
+        ) : null}
       </div>
     </div>
   );

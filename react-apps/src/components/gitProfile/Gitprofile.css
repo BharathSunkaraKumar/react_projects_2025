@@ -1,0 +1,56 @@
+.user{
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+}
+.user img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 5px solid rgb(82, 166, 250);
+}
+.git-wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.git-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100vw; */
+    /* border: 1px solid; */
+}
+.git-input input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.git-search button{
+    background-color: dodgerblue;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px; 
+}
+.title-github{
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 25px;
+}
+.title-github span{
+    color: lightblue;
+    font-weight: 300;
+    font-size: 19px;
+}

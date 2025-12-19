@@ -7,6 +7,7 @@ import Qrcode from "./components/Qr-code/Qrcode";
 import RandomColor from "./components/random_color/RandomColor";
 import Rating from "./components/Rating_stars/Rating";
 import ScrollBar from "./components/scroll-bar/ScrollBar";
+import SearchAC from "./components/searchAutoComplete/SearchAC";
 import Tab from "./components/tabs/Tab";
 import ModelTest from "./model/ModelTest";
 import menus from "./tree-view/data";
@@ -26,7 +27,8 @@ function App() {
       {/* <ScrollBar url={"https://dummyjson.com/products?limit=100"} /> */}
       {/* <Tab /> */}
       {/* <ModelTest /> */}
-      <GitProfile />
+      {/* <GitProfile /> */}
+      <SearchAC />
     </>
   );
 }
