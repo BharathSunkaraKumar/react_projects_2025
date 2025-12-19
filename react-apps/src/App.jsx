@@ -1,4 +1,6 @@
 import Accordion from "./components/accordion/Accordion";
+import FeatureFlagGlobalState from "./components/feature-flag/context/FeatureFlagGlobalState";
+import Features from "./components/feature-flag/Features";
 import GitProfile from "./components/gitProfile/GitProfile";
 import Slider from "./components/image-slider/Slider";
 import Theme from "./components/light-dark/Theme";
@@ -10,9 +12,9 @@ import ScrollBar from "./components/scroll-bar/ScrollBar";
 import SearchAC from "./components/searchAutoComplete/SearchAC";
 import Tab from "./components/tabs/Tab";
 import TicTacToe from "./components/tictactoe/TicTacToe";
-import ModelTest from "./model/ModelTest";
-import menus from "./tree-view/data";
-import MainMenu from "./tree-view/MainMenu";
+import ModelTest from "./components/model/ModelTest";
+import menus from "./components/tree-view/data";
+import MainMenu from "./components/tree-view/MainMenu";
 
 function App() {
   return (
@@ -30,7 +32,10 @@ function App() {
       {/* <ModelTest /> */}
       {/* <GitProfile /> */}
       {/* <SearchAC /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <FeatureFlagGlobalState>
+        <Features />
+      </FeatureFlagGlobalState>
     </>
   );
 }

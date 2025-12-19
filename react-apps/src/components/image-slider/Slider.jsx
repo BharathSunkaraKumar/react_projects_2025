@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "./Slider.css";
 
-const Slider = ({ url, limit = 10 }) => {
+const Slider = ({ url = "https://picsum.photos/v2", limit = 10 }) => {
   const [images, setImages] = useState([]);
   const [currentSlider, setCurrentSlider] = useState(0);
   const [loading, setLoading] = useState(false);
