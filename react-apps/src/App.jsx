@@ -15,6 +15,9 @@ import TicTacToe from "./components/tictactoe/TicTacToe";
 import ModelTest from "./components/model/ModelTest";
 import menus from "./components/tree-view/data";
 import MainMenu from "./components/tree-view/MainMenu";
+import FetchData from "./components/customHooks/FetchData";
+import ShowContent from "./components/customHooks/ShowContent";
+import ShowResize from "./components/customHooks/ShowResize";
 
 function App() {
   return (
@@ -33,9 +36,12 @@ function App() {
       {/* <GitProfile /> */}
       {/* <SearchAC /> */}
       {/* <TicTacToe /> */}
-      <FeatureFlagGlobalState>
+      {/* <FeatureFlagGlobalState>
         <Features />
-      </FeatureFlagGlobalState>
+      </FeatureFlagGlobalState> */}
+      {/* <FetchData /> */}
+      {/* <ShowContent /> */}
+      <ShowResize />
     </>
   );
 }
